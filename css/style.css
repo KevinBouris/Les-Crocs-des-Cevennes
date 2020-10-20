@@ -7,36 +7,78 @@ body {
         Header Style
 ========================*/
 
-header {
+.menu {
     
-
+    flex-basis: 100%;
+    margin: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .1s ease-in-out;
+    visibility: hidden;
+    list-style: none;
+    padding: 0 2em;
+    text-transform: uppercase;
 }
 
-#collapseNav > ul > li {
-
+.menu li {
+    border-bottom: 1px solid #eee;
 }
 
-#collapseNav > ul > li > a {
-
+.menu li a {
+    display: inline-block;
+    padding: 0.5em 1em;
 }
 
-#headerbutton {
-
+.menu-checkbox:checked ~ .menu {
+    max-height: 1000px;
+    margin: 1em 0;
+    opacity: 1;
+    visibility: visible;
 }
 
-#headerbutton > i {
-
+.menu-checkbox {
+	opacity: 0;
+	position: absolute;
+	top: -1000px;
 }
 
+.menu-checkbox:focus + .menu-toggle {
+    outline: #00A1A1 auto 5px;
+}
 
+.menu-toggle {
+    padding: .5em 1em;
+}
 
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-/* @media (min-width: 992px) {
-    #headerbutton {
-        display: none;
+#logo {
+    width: 100px;
+}
+
+@media screen and (min-width: 65em) {
+    .menu {
+        flex-basis: auto;
+        margin: 0;
+        max-height: 1000px;
+        opacity: 1;
+        padding: 0;
+        visibility: visible;
     }
 
-    #collapseNav {
-        display: flex;
+    .menu li {
+        border: none;
+        display: inline-block;
     }
-} */
+
+    .menu li a {
+        padding: .5em;
+    }
+}
+

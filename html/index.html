@@ -20,27 +20,19 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="row">
-            <div class="col d-flex">     
-                <nav class="navbar">
-                    <button class="btn btn-primary" id="headerbutton" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseExample">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse" id="collapseNav">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Activités</a></li>
-                            <li><a href="#">Loisirs</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <nav class="navbar">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo-final.jpg" alt="" srcset="">
-                    </a>
-                </nav>
-            </div>  
+        <header class="row ">
+            
+            <nav class="col nav-wrapper">
+                <a href="index.html"><img id="logo" src="../img/logo-final.png" alt=""></a>
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="menu-toggle"><i class="fas fa-bars"></i></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">Loisirs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="row headertitle">
             <h1 id="title">Les Crocs des Cévennes</h1>
