@@ -3,27 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <!-- font awesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/207038ab50.js" crossorigin="anonymous"></script>
+
+    <!-- font adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/pty7zcb.css">
+
+    <!-- feuille de style -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Les Crocs des Cevennes</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row header">
-            <header class="col-4">
-                <a href="index.html">Image</a>
-            </header>
-            <nav class="col-8">
+        <header class="row">
+            <div class="col d-flex">     
+                <nav class="navbar">
+                    <button class="btn btn-primary" id="headerbutton" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse" id="collapseNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Activités</a></li>
+                            <li><a href="#">Loisirs</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="navbar">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo-final.jpg" alt="" srcset="">
+                    </a>
+                </nav>
+            </div>  
+        </header>
+        <div class="row headertitle">
+            <h1 id="title">Les Crocs des Cévennes</h1>
+            <p id="subtitle">Pension Familiale | Centre d'éducation | Loisirs canins</p>
+        </div>
+        <main>
+            <p>Au coeur d'un village cévenole entre montagne et rivière, la <em>pension</em> <strong>Les Crocs des Cévennes</strong> vous accueille toute l'année pour une nuit ou un mois</p>
+
+            <img src="../img/accueil.jpg" alt="" srcset="">
+
+            <p>A Sumène, avec Agnès Brilliant, éducatrice canin diplômée d'état, les activités sont proposées à domicile ou dans différents lieux (parc, marchés, village, ...)</p>
+
+            <img src="../img/chien-ville.jpg" alt="" srcset="">
+
+            <p>Je propose également des interventions en médiation animale auprès de diverses structures (EHPAD, maisons de retraite, instituts spécialisés, ...)</p>
+
+            <h2>Les activités</h2>
+            <h3>Pension familiale</h3>
+            <img src="" alt="">
+            <p>Vous devez vous absenter et vous ne savez pas quoi faire de votre poilu ? Que ce soit pour une nuit ou pour un mois. Je garde votre animal à mes côtés
+                <a href="activity.html">Pour en savoir plus</a>
+            </p>
+
+            <h3>Crèche à la journée</h3>
+            <img src="" alt="">
+            <p>Service de garde pour la journée
+                <a href="activity.html">Pour en savoir plus</a>
+            </p>
+
+            <h3>Éducation</h3>
+            <img src="" alt="">
+            <p>Pour renforcer l'éducation de base, seul ou en présence d'autres chiens
+                <a href="activity.html">Pour en savoir plus</a>
+            </p>
+
+            <h3>Rééducation</h3>
+            <img src="" alt="">
+            <p>Besoin d'enrayer un comportement installé : <em>desctruction</em>, <em>chien qui tire en laisse</em>, etc ...
+            <a href="activity.html">Pour en savoir plus</a>
+            </p>
+
+            <h2>Les loisirs</h2>
+            <h3>Obéissance - initiation</h3>
+            <img src="" alt="">
+            <p>Découverte de la discipline
+                <a href="loisirs.html">Pour en savoir plus</a>
+            </p>
+            
+            <h3>Activité de flair</h3>
+            <img src="" alt="">
+            <p>Vous souhaitez développer son sens olfactif ?
+                <a href="loisirs.html"></a>
+            </p>
+
+            <h3>Balade éducative</h3>
+            <img src="" alt="">
+            <p>Venez défouler votre chien en compagnie d'autres congénères tout en consolidants les bases éducatives
+                <a href="loisirs.html"></a>
+            </p>
+
+
+
+        </main>
+        <footer>
+            <nav>
                 <ul>
                     <li>Home</li>
-                    <li>Activités</li>
-                    <li>Contact</li>
+                    <li>Activité</li>
+                    <li>Loisirs</li>
                 </ul>
             </nav>
-        </div>
-        <div class="row main"></div>
-        <div class="row footer"></div>
+            <h4>Contact</h4>
+            <p>Je vous accueil aux portes du Parc National des Cévennes au : 44 Rue Pied de Ville, 30440, SUMÈNE</p>
+            <p>À 1h de Montpellier, de Nîmes et d'Ales</p>
+        </footer>
     </div>
 
 

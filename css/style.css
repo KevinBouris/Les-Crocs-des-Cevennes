@@ -1,8 +1,42 @@
 body {
-    background-color: #B7904F;
+
+    font-family: cooper-black-std, Verdana, Geneva, Tahoma, sans-serif;  
 }
 
-.header .footer {
-    background-color: #708D79;
+/*=====================
+        Header Style
+========================*/
+
+header {
+    
+
 }
 
+#collapseNav > ul > li {
+
+}
+
+#collapseNav > ul > li > a {
+
+}
+
+#headerbutton {
+
+}
+
+#headerbutton > i {
+
+}
+
+
+
+
+/* @media (min-width: 992px) {
+    #headerbutton {
+        display: none;
+    }
+
+    #collapseNav {
+        display: flex;
+    }
+} */
