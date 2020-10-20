@@ -7,6 +7,7 @@ body {
         Header Style
 ========================*/
 
+    /* Gestion du menu burger */
 .menu {
     
     flex-basis: 100%;
@@ -62,7 +63,7 @@ body {
     width: 100px;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 992px) {
     .menu {
         flex-basis: auto;
         margin: 0;
@@ -70,6 +71,10 @@ body {
         opacity: 1;
         padding: 0;
         visibility: visible;
+    }
+
+    .menu-toggle{
+        display: none;
     }
 
     .menu li {
