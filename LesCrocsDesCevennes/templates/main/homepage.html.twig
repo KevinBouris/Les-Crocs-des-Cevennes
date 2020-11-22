@@ -77,20 +77,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        {% for activity in activities %}
+            <div class="col-12">
             <div class="row">
                 <div class="col"><img></div>
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Pension familiale</h4>
-                            <p class="card-text">Vous devez vous absenter et vous ne savez pas quoi faire de votre poilu ? Que ce soit pour une nuit ou pour un mois. Je garde votre animal à mes côtés</p>
+                            <h4 class="card-title">{{ activity.name }}</h4>
+                            <p class="card-text">{{ activity.shortDescription }}</p>
                             <a class="card-link" href="#">En savoir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        {% endfor %}        
     </div>
     <div class="row">
         <div class="col-sm-12 d-sm-flex justify-content-center">
