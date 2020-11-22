@@ -4,72 +4,116 @@
 
 {% block body %}
 
-<div class="row mt-5">
-    <div class="col-12 d-flex justify-content-center">
-    <h1>Les Crocs des Cévennes</h1>
+<div class="row">
+    <div class="col-sm-12 d-sm-flex justify-content-center">
+    <h1 class="ml-4">Les Crocs des Cévennes</h1>
     </div>
     <div class="col-12 d-flex flex-nowrap justify-content-center align-items-end">
     <p id="subtitle">Pension Familiale | Centre d'éducation | Loisirs canins</p>
     </div>
 </div>
 
+{# TODO Modifier le carroussel pour qu'il soit centré #}
+<div class="carousel slide" data-ride="carousel" id="carousel-1">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="img-fluid d-block" src="{{ asset('assets/img/chien-ville.jpg') }}" alt="Slide Image">
+        </div>
+        <div class="carousel-item">
+            <img class="img-fluid d-block" src="{{ asset('assets/img/accueil.jpg') }}" alt="Slide Image">
+        </div>
+    </div>
+    <div>
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-1" role="button"data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-1" data-slide-to="1"></li>
+    </ol>
+</div>
 <main>
-    <p>Au coeur d'un village cévenole entre montagne et rivière, la <em>pension</em> <strong>Les Crocs des Cévennes</strong> vous accueille toute l'année pour une nuit ou un mois</p>
-
-    <img src="{{ asset('assets/img/accueil.jpg')}}" alt="" srcset="">
-
-    <p>A Sumène, avec Agnès Brilliant, éducatrice canin diplômée d'état, les activités sont proposées à domicile ou dans différents lieux (parc, marchés, village, ...)</p>
-
-    <img src="{{ asset('assets/img/chien-ville.jpg') }}" alt="" srcset="">
-
-    <p>Je propose également des interventions en médiation animale auprès de diverses structures (EHPAD, maisons de retraite, instituts spécialisés, ...)</p>
-
-    <h2>Les activités</h2>
-    <h3>Pension familiale</h3>
-    <img src="" alt="">
-    <p>Vous devez vous absenter et vous ne savez pas quoi faire de votre poilu ? Que ce soit pour une nuit ou pour un mois. Je garde votre animal à mes côtés
-        <a href="activity.html">Pour en savoir plus</a>
-    </p>
-
-    <h3>Crèche à la journée</h3>
-    <img src="" alt="">
-    <p>Service de garde pour la journée
-        <a href="activity.html">Pour en savoir plus</a>
-    </p>
-
-    <h3>Éducation</h3>
-    <img src="" alt="">
-    <p>Pour renforcer l'éducation de base, seul ou en présence d'autres chiens
-        <a href="activity.html">Pour en savoir plus</a>
-    </p>
-
-    <h3>Rééducation</h3>
-    <img src="" alt="">
-    <p>Besoin d'enrayer un comportement installé : <em>desctruction</em>, <em>chien qui tire en laisse</em>, etc ...
-    <a href="activity.html">Pour en savoir plus</a>
-    </p>
-
-    <h2>Les loisirs</h2>
-    <h3>Obéissance - initiation</h3>
-    <img src="" alt="">
-    <p>Découverte de la discipline
-        <a href="loisirs.html">Pour en savoir plus</a>
-    </p>
-    
-    <h3>Activité de flair</h3>
-    <img src="" alt="">
-    <p>Vous souhaitez développer son sens olfactif ?
-        <a href="loisirs.html"></a>
-    </p>
-
-    <h3>Balade éducative</h3>
-    <img src="" alt="">
-    <p>Venez défouler votre chien en compagnie d'autres congénères tout en consolidants les bases éducatives
-        <a href="loisirs.html"></a>
-    </p>
-
-
-
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col mt-5 d-flex justify-content-center">
+                    <img class="img-fluid" src="{{ asset('assets/img/accueil.jpg')}}" alt="" srcset="">
+                </div>
+                <div class="col mt-5 d-flex align-items-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                            <p class="card-text">A Sumène, avec Agnès Brilliant, éducatrice canin diplômée d'état, les activités sont proposées à domicile ou dans différents lieux (parc, marchés, village, ...)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col mt-5 order-3">
+                    <img class="img-fluid" src="{{ asset('assets/img/chien-ville.jpg') }}" alt="" srcset="">
+                </div>
+                <div class="col mt-5 d-flex align-items-center order-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Je propose également des interventions en médiation animale auprès de diverses structures (EHPAD, maisons de retraite, instituts spécialisés, ...)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 d-sm-flex justify-content-center">
+            <h2 class="ml-3">Les activités</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col"><img></div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Pension familiale</h4>
+                            <p class="card-text">Vous devez vous absenter et vous ne savez pas quoi faire de votre poilu ? Que ce soit pour une nuit ou pour un mois. Je garde votre animal à mes côtés</p>
+                            <a class="card-link" href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 d-sm-flex justify-content-center">
+            <h2 class="ml-3">Les loisirs</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col"><img></div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Activité de flair</h4>
+                            <p class="card-text">Vous souhaitez développer son sens olfactif ?</p>
+                            <a class="card-link" href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 
 {% endblock %}
