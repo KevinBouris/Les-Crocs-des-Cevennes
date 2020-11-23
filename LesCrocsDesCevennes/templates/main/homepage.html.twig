@@ -14,13 +14,13 @@
 </div>
 
 {# TODO Modifier le carroussel pour qu'il soit centré #}
-<div class="carousel slide" data-ride="carousel" id="carousel-1">
+<div class="carousel slide mt-4" data-ride="carousel" id="carousel-1">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="img-fluid d-block" src="{{ asset('assets/img/chien-ville.jpg') }}" alt="Slide Image">
+            <img class="img-fluid w-70 d-block" src="{{ asset('assets/img/chien-ville.jpg') }}" alt="Slide Image">
         </div>
         <div class="carousel-item">
-            <img class="img-fluid d-block" src="{{ asset('assets/img/accueil.jpg') }}" alt="Slide Image">
+            <img class="img-fluid w-70 d-block" src="{{ asset('assets/img/accueil.jpg') }}" alt="Slide Image">
         </div>
     </div>
     <div>
@@ -78,23 +78,23 @@
     </div>
     <div class="row">
         {% for activity in activities %}
-            <div class="col-12">
-            <div class="row">
-                <div class="col"><img></div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">{{ activity.name }}</h4>
-                            <p class="card-text">{{ activity.shortDescription }}</p>
-                            <a class="card-link" href="#">En savoir plus</a>
+            <div class="col-12 mt-5">
+                <div class="row">
+                    <div class="col"><img></div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ activity.name }}</h4>
+                                <p class="card-text">{{ activity.shortDescription }}</p>
+                                <a class="card-link" href="#">En savoir plus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         {% endfor %}        
     </div>
-    <div class="row">
+{#     <div class="row">
         <div class="col-sm-12 d-sm-flex justify-content-center">
             <h2 class="ml-3">Les loisirs</h2>
         </div>
@@ -115,7 +115,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> #}
 </main>
 
 {% endblock %}
