@@ -1,0 +1,47 @@
+:root {
+    --font-poppins: 'Poppins';
+}
+
+img {
+    width: 50%;
+}
+
+.grid {
+    display: grid;
+
+}
+
+#title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #449E85;
+    color: white;
+    font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: small;
+    padding: 1em;
+    position: relative;
+}
+
+.navigation {
+    background-color: #6CBCA6;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.navigation nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navigation a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    
+}
+
+
