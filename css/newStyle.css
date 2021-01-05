@@ -123,7 +123,7 @@ h2 {
     text-align: center;
     text-shadow: 0 0 10px #FFD593;
     padding: 0.5em;
-    margin: 1em 0 1em 1em;
+    margin: 1em 0 0 1em;
     border-radius: 1em;
     font-family: "Poppins bold", Arial, Helvetica, sans-serif;
     color: var(--h2-color);
@@ -132,4 +132,13 @@ h2 {
 
 h3 {
     font-family: "Poppins bold", Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: #A2DBCB;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 3px #6CBBA5;
+    
 }
