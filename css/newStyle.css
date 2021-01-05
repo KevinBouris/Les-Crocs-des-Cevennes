@@ -1,21 +1,27 @@
 :root {
     --font-poppins: 'Poppins';
+    --background-color-headfoot: #449E85; 
 }
 
 img {
     width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .grid {
     display: grid;
-
 }
+
+/* ------------------------------------
+|               HEADER                 |
+--------------------------------------- */
 
 #title {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #449E85;
+    background-color: var(--background-color-headfoot);
     color: white;
     font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -44,4 +50,12 @@ img {
     
 }
 
+/* ------------------------------------
+|              FOOTER                  |
+--------------------------------------- */
 
+footer {
+    background-color: var(--background-color-headfoot);
+    margin-top: 1em;
+    display: flex;
+}
