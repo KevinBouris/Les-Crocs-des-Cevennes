@@ -1,6 +1,26 @@
+@font-face {
+    font-family: "Poppins regular";
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+}
+
+@font-face {
+    font-family: "Poppins bold";
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins light italic";
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap);
+}
+
+@font-face {
+    font-family: "Poppins Thin";
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,300&display=swap);
+}
 :root {
-    --font-poppins: 'Poppins';
-    --background-color-headfoot: #449E85; 
+    --background-color-headfoot: #449E85;
+    --h2-color: #F1BC69; 
 }
 
 img {
@@ -23,7 +43,7 @@ img {
     justify-content: center;
     background-color: var(--background-color-headfoot);
     color: white;
-    font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+    font-family: "Poppins regular", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: small;
@@ -58,7 +78,6 @@ img {
 
 footer {
     background-color: var(--background-color-headfoot);
-    margin-top: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,4 +105,31 @@ footer {
     color: white;
     display: block;
     margin-bottom: 1em;
+}
+
+/* ------------------------------------
+|              MAIN CONTENT            |
+--------------------------------------- */
+
+main {
+    font-family: "Poppins regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    width: 30%;
+    text-align: center;
+    text-shadow: 0 0 10px #FFD593;
+    padding: 0.5em;
+    margin: 1em 0 1em 1em;
+    border-radius: 1em;
+    font-family: "Poppins bold", Arial, Helvetica, sans-serif;
+    color: var(--h2-color);
+    background-color: var(--background-color-headfoot);
+}
+
+h3 {
+    font-family: "Poppins bold", Arial, Helvetica, sans-serif;
 }
