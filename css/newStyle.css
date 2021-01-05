@@ -35,11 +35,13 @@ img {
     background-color: #6CBCA6;
     padding: 1em;
     cursor: pointer;
+    flex-basis: 100%;
 }
 
 .navigation nav {
     display: flex;
     justify-content: space-between;
+    padding: 0em 1em 0em 1em;
     
 }
 
@@ -58,4 +60,30 @@ footer {
     background-color: var(--background-color-headfoot);
     margin-top: 1em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.social img {
+    width: 2.5em;
+    border-radius: 0.7em;
+    margin-right: 1em;
+}
+
+.copyright {
+    font-size: 0.7em;
+    align-self: center;
+    color: white;
+    display: block;
+    margin-bottom: 1em;
 }
