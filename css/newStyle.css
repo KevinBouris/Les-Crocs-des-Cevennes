@@ -148,13 +148,13 @@ h3 {
     grid-row-gap: 1em;
 }
 
-.card-image {
-    grid-column: 1/4;
-    grid-row: 1/2;
+.card_image {
+    grid-column: 1/2;
+    grid-row: 1/4;
 }
 
-.card-image img {
-    width: 10%;
+.card_image img {
+    max-width: 100%;
 }
 
 .card-text {
