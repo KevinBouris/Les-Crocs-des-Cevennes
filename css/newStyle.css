@@ -77,6 +77,7 @@
 --------------------------------------- */
 
 footer {
+    margin-top: 1em;
     background-color: var(--background-color-headfoot);
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +120,8 @@ main {
 }
 
 h2 {
-    width: 30%;
+    width: 50%;
+    font-size: 1.2em;
     text-align: center;
     text-shadow: 0 0 10px #FFD593;
     padding: 0.5em;
@@ -143,19 +145,21 @@ h3 {
     box-shadow: 0 0 3px #6CBBA5;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-column-gap: 1em;
+    
 }
 
 .card_image {
     grid-column: 1/2;
     grid-row: 1/4;
+    align-self: center;
 }
 
 .card_image img {
     max-width: 100%;
+    max-height: 100%;
     border-radius: 1em 0 0 1em;
-    box-shadow: 0 0 10px 10px var(--background-color-headfoot) inset;
 }
 
 .card-text {
@@ -163,15 +167,29 @@ h3 {
     line-height: 1.2em;
     text-shadow: whitesmoke 1px 1px 1px;
     padding-right: 1em;
+    justify-self: stretch;
 }
 
 .card-title {
     color: var(--h2-color);
     align-self: center;
+    justify-self: center;
     font-weight: bold;
 }
 
 .card-link {
     align-self: center;
+    justify-self: center;
+    background-color: var(--h2-color);
+    color: var(--background-color-headfoot);
+    padding: .5em;
+    display: inline;
+    width: 70%;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+i {
+    margin-right: .5em;
 }
 
