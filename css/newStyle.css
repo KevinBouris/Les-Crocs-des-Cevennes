@@ -143,9 +143,8 @@ h3 {
     box-shadow: 0 0 3px #6CBBA5;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 2fr);
+    grid-template-rows: 1fr 2fr;
     grid-column-gap: 1em;
-    grid-row-gap: 1em;
 }
 
 .card_image {
@@ -155,23 +154,24 @@ h3 {
 
 .card_image img {
     max-width: 100%;
+    border-radius: 1em 0 0 1em;
+    box-shadow: 0 0 10px 10px var(--background-color-headfoot) inset;
 }
 
 .card-text {
     max-width: 100%;
+    line-height: 1.2em;
+    text-shadow: whitesmoke 1px 1px 1px;
+    padding-right: 1em;
 }
 
-.card-title{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.card-text{
-    grid-column: 2/3;
-    grid-row: 2/3;
+.card-title {
+    color: var(--h2-color);
+    align-self: center;
+    font-weight: bold;
 }
 
 .card-link {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    align-self: center;
 }
+
