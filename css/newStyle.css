@@ -101,19 +101,36 @@ main {
     flex-direction: column;
 }
 
-h2 {
+h1 {
     /* Display & box model */
+    align-self: center;
     width: 50%;
-    font-size: 1.2em;
+    height: 100%;
     padding: 0.5em;
     margin: 1em 0 0 1em;
     border-radius: 1em;
+    background-color: var(--background-color-headfoot);
 
     /* Text */
+    font-size: 2em;
     text-align: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: var(--h2-color);
+}
+
+h2 {
+    /* Display & box model */
+    width: 50%;
+    padding: 0.5em;
+    margin: 1em 0 0 1em;
+    border-radius: 1em;
     background-color: var(--background-color-headfoot);
+    
+    /* Text */
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--h2-color);
 }
 
 h3 {
@@ -173,7 +190,8 @@ h3 {
     background-color: var(--h2-color);
     color: var(--background-color-headfoot);
     padding: .5em .5em .5em 1em;
-    display: inline;
+    display: flex;
+    justify-content: center;
     width: 70%;
     border-radius: 1em;
     text-decoration: none;
