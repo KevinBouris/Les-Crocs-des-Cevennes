@@ -175,6 +175,8 @@ h3 {
     align-self: center;
     justify-self: center;
     font-weight: bold;
+    border-bottom: var(--h2-color) 1px solid;
+    padding-bottom: .5em;
 }
 
 .card-link {
@@ -182,7 +184,7 @@ h3 {
     justify-self: center;
     background-color: var(--h2-color);
     color: var(--background-color-headfoot);
-    padding: .5em;
+    padding: .5em .5em .5em 1em;
     display: inline;
     width: 70%;
     border-radius: 1em;
