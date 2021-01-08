@@ -72,6 +72,8 @@ footer {
     flex-basis: 100%;
     text-decoration: none;
     color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .social img {
@@ -100,13 +102,16 @@ main {
 }
 
 h2 {
+    /* Display & box model */
     width: 50%;
     font-size: 1.2em;
-    text-align: center;
-    text-shadow: 0 0 10px #FFD593;
     padding: 0.5em;
     margin: 1em 0 0 1em;
     border-radius: 1em;
+
+    /* Text */
+    text-shadow: 0 0 10px #FFD593;
+    text-align: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: var(--h2-color);
     background-color: var(--background-color-headfoot);
@@ -171,7 +176,42 @@ h3 {
     text-decoration: none;
 }
 
-i {
+.card-link i {
     margin-right: .5em;
+}
+
+.intro {
+    /* Display and box model */
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid var(--h2-color) 1px;
+    padding: 1em;
+    margin: 1em;
+
+    /* Text */
+    line-height: 1.2em;
+}
+
+.intro p {
+    margin-bottom: 1em;
+}
+
+.intro-image {
+    width: 100vw - 1;
+    height: 50vh;
+    margin-bottom: 1em;
+    background-image:url(/img/accueil.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 80px 60px white inset;
+}
+
+.intro-p1 {
+    align-self: center;
+}
+
+.sitename {
+    color: var(--h2-color);
 }
 
