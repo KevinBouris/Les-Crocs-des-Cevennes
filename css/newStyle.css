@@ -110,7 +110,6 @@ h2 {
     border-radius: 1em;
 
     /* Text */
-    text-shadow: 0 0 10px #FFD593;
     text-align: center;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: var(--h2-color);
@@ -119,6 +118,7 @@ h2 {
 
 h3 {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 2px whitesmoke;
 }
 
 .card {
@@ -156,12 +156,15 @@ h3 {
 }
 
 .card-title {
-    color: var(--h2-color);
+    /* Display & box model */
     align-self: center;
     justify-self: center;
-    font-weight: bold;
-    border-bottom: var(--h2-color) 1px solid;
+    border-bottom: #D19940 1px solid;
     padding-bottom: .5em;
+
+    /* Text */
+    color: #D19940;    
+    font-weight: bold;
 }
 
 .card-link {
