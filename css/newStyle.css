@@ -233,7 +233,7 @@ h3 {
     width: 100vw - 1;
     height: 50vh;
     margin-bottom: 1em;
-    background-image:url(/img/accueil.jpg);
+    background-image:url("../img/accueil.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
