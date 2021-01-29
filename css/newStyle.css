@@ -4,7 +4,7 @@
 }
 
 #title img {
-    width: 50%;
+    height: 50vh;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -29,6 +29,12 @@
     font-size: small;
     padding: 1em;
     position: relative;
+}
+
+#title p {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .navigation {
@@ -227,6 +233,8 @@ div.card-link ul {
     /* Display and box model */
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border-bottom: solid var(--h2-color) 1px;
     padding: 1em;
     margin: 1em;
@@ -240,7 +248,7 @@ div.card-link ul {
 }
 
 .intro-image {
-    width: 100vw - 1;
+    width: 100vw;
     height: 50vh;
     margin-bottom: 1em;
     background-image:url("../img/accueil.jpg");
@@ -248,10 +256,6 @@ div.card-link ul {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 0px 80px 60px white inset;
-}
-
-.intro-p1 {
-    align-self: center;
 }
 
 .sitename {
@@ -263,4 +267,69 @@ div.card-link ul {
     color: #D19940;
     text-decoration: none;
     text-shadow: 0px 0px 2px whitesmoke;
+}
+
+@media (min-width: 1200px) {
+
+    .navigation nav {
+        justify-content: space-around;
+    }
+
+    .intro p {
+        margin: 0;
+    }
+
+    h2 {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: 
+            "intro intro intro intro"
+            ". titleActivity titleActivity ."
+            ". activityCard activityCard1 ."
+            ". activityCard2 activityCard2 ."  
+            ". titleLoisir titleLoisir ."
+            ". loisirCard loisirCard ."
+        ;
+        grid-template-rows: 700px 100px 800px 800px 100px 1fr;
+        grid-template-columns: 1fr 4fr 4fr 1fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 50px;
+        
+    }
+
+    .intro {
+        grid-area: intro;
+    }
+
+    .cardActivity {
+        grid-area: activityCard;        
+    }
+
+    .cardActivity1 {
+        grid-area: activityCard1;
+    }
+
+    .cardActivity2 {
+        grid-area: activityCard2;
+    }
+
+    .titleActivity {
+        grid-area: titleActivity;
+    }
+
+    .cardLoisir {
+        grid-area: loisirCard;
+    }
+
+    .titleLoisir {
+        grid-area: titleLoisir;
+    }
 }
