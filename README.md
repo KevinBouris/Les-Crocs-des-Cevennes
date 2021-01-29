@@ -1,3 +1,3 @@
 # Les Crocs des Cevennes
 
-Projet pour un centre d'éducation canine.
+Site statique pour une centre d'éducation canine.
