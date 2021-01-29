@@ -319,6 +319,7 @@ div.card-link ul {
 
     .card-text{
         padding: 2em;
+        line-height: 2em;
     }
 
     main {
