@@ -279,6 +279,35 @@ div.card-link ul {
         margin: 0;
     }
 
+    .card {
+        grid-template-areas: 
+            ". title"
+            "image texte"
+            ". lien"
+        ;
+        grid-template-rows: 50px 1fr 50px;
+        padding: 2em;
+    }
+
+    .card_image {
+        grid-area: image;
+    }
+
+    .card-title {
+        grid-area: title;
+        /* align-self: flex-end; */
+    }
+
+    .card-text {
+        grid-area: texte;
+        align-self: center;
+    }
+
+    .card-link {
+        grid-area: lien;
+        /* align-self: flex-start; */
+    }
+
     h2 {
         width: 100%;
         margin-left: 0;
@@ -286,6 +315,10 @@ div.card-link ul {
         justify-content: center;
         align-items: center;
         font-size: 1.5em;
+    }
+
+    .card-text{
+        padding: 2em;
     }
 
     main {
@@ -310,7 +343,7 @@ div.card-link ul {
     }
 
     .cardActivity {
-        grid-area: activityCard;        
+        grid-area: activityCard;       
     }
 
     .cardActivity1 {
