@@ -217,12 +217,16 @@ h3 {
 
 div.card-link {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+    /* flex-wrap: wrap; */
+    
 }
 
 div.card-link ul {
-    line-height: 1.2em;
-    margin-top: 0.5em;
+    align-self: center;
+    line-height: 1.5em;
+    margin-top: 1em;
 }
 
 .card-link i {

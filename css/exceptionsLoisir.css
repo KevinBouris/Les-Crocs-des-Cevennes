@@ -1,0 +1,50 @@
+@media (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            ". . . ."
+            ". titleLoisir titleLoisir ." 
+            ". cardLoisir cardLoisir ."
+        ;
+        
+        grid-template-rows: auto auto 100vh;
+        grid-template-columns: auto 4fr 4fr auto;
+    }
+
+    .card {
+        grid-template-areas:
+            "image title"
+            "image texte"
+            "image lien"
+        ;
+        grid-template-rows: auto 200px auto;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        
+    }
+
+    .card_image {
+        height: 800px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        grid-area: titleLoisir;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .card_loisir {
+        grid-area: cardLoisir;
+    }
+
+    div.card-link p {
+       margin-left: 3em;
+    }
+}
