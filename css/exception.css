@@ -1,3 +1,61 @@
 @media (min-width: 1200px) {
-    
+    main {
+        display: grid;
+        grid-template-areas:
+            ". . . ."
+            ". titleActivity titleActivity ." 
+            ". cardActivity cardActivity1 ."
+            ". cardActivity2 cardActivity2 ."
+        ;
+        
+        grid-template-rows: auto auto 1fr 1fr;
+        grid-template-columns: auto 4fr 4fr auto;
+    }
+
+    .card {
+        grid-template-areas:
+            "image title"
+            "image texte"
+            "texteInfo lien"
+        ;
+        grid-template-rows: .2fr 1fr 50px;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em;
+        
+    }
+
+    h1 {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+
+    .cardActivity {
+        grid-area: cardActivity;
+    }
+
+    .cardActivity1 {
+        grid-area: cardActivity1;
+    }
+
+    .cardActivity2 {
+        grid-area: cardActivity2;
+    }
+
+    .card-text-mod {
+        align-self: flex-end;        
+    }
+
+    .card-text-em {
+        grid-area: texteInfo;
+        text-align: center;
+    }
+
+    .image_education {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -287,6 +287,7 @@ div.card-link ul {
         ;
         grid-template-rows: .2fr 1fr 50px;
         padding: 2em;
+        
     }
 
     .card_image {
