@@ -1,0 +1,30 @@
+@media (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            ". . . ."
+            ". titleContact titleContact ."
+            ". accroche contactInfo ."
+            ". image image ."
+        ;
+
+        grid-template-rows: auto auto 2fr 2fr;
+        grid-template-columns: auto 2fr 2fr auto;
+    }
+
+    .titleContact {
+        grid-area: titleContact;
+    }
+
+    .accroche {
+        grid-area: accroche;
+    }
+
+    .contactInfo {
+        grid-area: contactInfo;
+    }
+
+    .image {
+        grid-area: image;
+    }
+}
